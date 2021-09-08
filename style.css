@@ -1,0 +1,49 @@
+.card-panel {
+  margin-right: 3%;
+}
+
+.card-panel-main {
+  margin: 1%;
+  margin-right: 5%;
+  margin-left: 1%;
+  width: 94%;
+}
+
+.city-list {
+  align-content: center;
+}
+
+.btn-large {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+h5 {
+  padding-bottom: 0;
+  padding-left: 20px;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.city-name {
+  margin-top: -1%;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.time {
+  font-weight: bold;
+  color: black;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}

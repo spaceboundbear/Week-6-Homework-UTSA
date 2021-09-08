@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center"
+          ><i class="material-icons">cloud</i>Weather Dashboard</a
+        >
+      </div>
+    </nav>
+    <div class="row page-margin">
+      <div class="col s3">
+        <h5>Search For a City</h5>
+        <form>
+          <div class="nav-wrapper">
+            <div class="input-field">
+              <input
+                class="search input"
+                id="search-text"
+                type="search"
+                required
+              />
+              <label class="label-icon" for="search" style="cursor: pointer"
+                ><i class="material-icons">search</i></label
+              >
+              <i class="material-icons close">close</i>
+              <button id="search-button" class="hide">search</button>
+            </div>
+          </div>
+        </form>
+        <div class="card-panel teal city-list"></div>
+      </div>
+      <div class="col s9">
+        <div class="row">
+          <div>
+            <h5>Current Weather</h5>
+            <div
+              class="
+                card-panel card-panel-main
+                teal
+                forecast-margin
+                left
+                weather-clear
+              "
+            >
+              <p class="white-text city-name" id="city-name"></p>
+              <p class="white-text" id="weather-pic"></p>
+              <p class="white-text" id="temp"></p>
+              <p class="white-text" id="wind"></p>
+              <p class="white-text" id="humidity"></p>
+              <div class="uv" id="uv-index"></div>
+            </div>
+          </div>
+        </div>
+        <h5>5 Day Forecast</h5>
+        <div>
+          <div class="card-panel teal small-cast col s2 hide"></div>
+        </div>
+        <div>
+          <div>
+            <div class="card-panel teal small-cast col s2 weather-clear">
+              <span class="weather-clear">
+                <p class="day1-time time"></p>
+                <p class="day1-pic"></p>
+                <p class="day1-temp"></p>
+                <p class="day1-humid"></p>
+              </span>
+            </div>
+          </div>
+          <div>
+            <div class="card-panel teal small-cast col s2 weather-clear">
+              <span class="weather-clear">
+                <p class="day2-time time"></p>
+                <p class="day2-pic"></p>
+                <p class="day2-temp"></p>
+                <p class="day2-humid"></p>
+              </span>
+            </div>
+          </div>
+          <div>
+            <div class="card-panel teal small-cast col s2 weather-clear">
+              <span class="weather-clear">
+                <p class="day3-time time"></p>
+                <p class="day3-pic"></p>
+                <p class="day3-temp"></p>
+                <p class="day3-humid"></p>
+              </span>
+            </div>
+          </div>
+          <div>
+            <div class="card-panel teal small-cast col s2 weather-clear">
+              <span class="weather-clear">
+                <p class="day4-time time"></p>
+                <p class="day4-pic"></p>
+                <p class="day4-temp"></p>
+                <p class="day4-humid"></p>
+              </span>
+            </div>
+          </div>
+          <div>
+            <div class="card-panel teal small-cast col s2 weather-clear">
+              <span class="weather-clear">
+                <p class="day5-time time"></p>
+                <p class="day5-pic"></p>
+                <p class="day5-temp"></p>
+                <p class="day5-humid"></p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="scripts.js"></script>
+</html>
